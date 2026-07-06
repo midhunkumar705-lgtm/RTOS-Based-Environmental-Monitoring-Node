@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an ESP32-based environmental monitoring system developed using **FreeRTOS**. It demonstrates multitasking by separating sensor acquisition and OLED display into independent RTOS tasks.
+An ESP32-based Environmental Monitoring System developed using **FreeRTOS**. The project demonstrates multitasking by separating sensor acquisition and display into independent RTOS tasks while monitoring multiple environmental parameters.
 
 ---
 
@@ -10,18 +10,22 @@ This project is an ESP32-based environmental monitoring system developed using *
 
 - ESP32 Development Board
 - FreeRTOS Multitasking
-- DHT22 Temperature & Humidity Sensor
+- Multi-Sensor Environmental Monitoring
 - SSD1306 OLED Display
-- Real-Time Sensor Monitoring
-- Serial Debug Output
+- Serial Debug Monitoring
 - Wokwi Simulation
 
 ---
 
-## Hardware
+## Hardware Components
 
 - ESP32 DevKit V1
-- DHT22 Sensor
+- DHT22 Temperature & Humidity Sensor
+- LDR Light Sensor
+- BMP280 Pressure & Altitude Sensor
+- PIR Motion Sensor
+- Gas Sensor
+- Rain Sensor
 - SSD1306 OLED Display
 
 ---
@@ -38,13 +42,31 @@ This project is an ESP32-based environmental monitoring system developed using *
 ## RTOS Tasks
 
 ### Sensor Task
-- Reads temperature
-- Reads humidity
-- Updates sensor data every 2 seconds
+- Reads Temperature
+- Reads Humidity
+- Reads Light Intensity
+- Reads Pressure
+- Reads Altitude
+- Reads Gas Level
+- Reads Rain Level
+- Reads Motion Status
 
 ### Display Task
 - Displays sensor values on OLED
-- Refreshes display every 1 second
+- Updates display periodically
+
+---
+
+## Current Sensor Monitoring
+
+- 🌡 Temperature
+- 💧 Humidity
+- ☀ Light Intensity
+- 🌍 Atmospheric Pressure
+- ⛰ Altitude
+- 🌫 Air Quality
+- 🌧 Rain Detection
+- 🚶 Motion Detection
 
 ---
 
@@ -62,31 +84,15 @@ RTOS-Based-Environmental-Monitoring-Node
 
 ---
 
-## Current Project Status
-
-✅ ESP32 Setup
-
-✅ FreeRTOS Task Creation
-
-✅ DHT22 Sensor
-
-✅ OLED Display
-
-🔄 More sensors will be added in future commits.
-
----
-
 ## Future Improvements
 
-- LDR Sensor
-- BMP280 Pressure Sensor
-- PIR Motion Sensor
-- Gas Sensor
-- Rain Sensor
-- LED & Buzzer Alerts
+- LED & Buzzer Alert System
+- FreeRTOS Queue
+- FreeRTOS Semaphore
+- FreeRTOS Mutex
 - Wi-Fi Connectivity
-- MQTT Cloud Integration
-- Data Logging
+- MQTT Cloud Dashboard
+- SD Card Data Logging
 
 ---
 
@@ -94,6 +100,6 @@ RTOS-Based-Environmental-Monitoring-Node
 
 **Midhun Kumar**
 
-Electronics and Communication Engineering
+B.E. Electronics and Communication Engineering
 
 Anna University
