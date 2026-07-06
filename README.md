@@ -8,14 +8,34 @@ An ESP32-based Environmental Monitoring System developed using **FreeRTOS**. The
 
 ## Features
 
+## Features
+
 - ESP32 Development Board
 - FreeRTOS Multitasking
 - Multi-Sensor Environmental Monitoring
+- DHT22 Temperature & Humidity Sensor
+- LDR Light Sensor
+- BMP280 Pressure Sensor
+- PIR Motion Sensor
+- Gas Sensor
+- Rain Sensor
 - SSD1306 OLED Display
-- Serial Debug Monitoring
+- Serial Debug Output
 - Wokwi Simulation
-
 ---
+
+## Sensors Monitored
+
+| Parameter | Sensor |
+|---|---|
+| Temperature | DHT22 |
+| Humidity | DHT22 |
+| Light Intensity | LDR |
+| Pressure | BMP280 |
+| Altitude | BMP280 |
+| Motion | PIR Sensor |
+| Air Quality | Gas Sensor |
+| Rain Level | Rain Sensor |
 
 ## Hardware Components
 
